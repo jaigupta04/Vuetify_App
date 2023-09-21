@@ -1,10 +1,11 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
+import defa from '@/layouts/default/Default.vue'
 
 const routes = [
   {
     path: '/',
-    component: () => import('@/layouts/default/Default.vue'),
+    component: defa, //() => import('@/layouts/default/Default.vue')
     children: [
       {
         path: '',
